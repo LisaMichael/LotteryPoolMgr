@@ -1,0 +1,29 @@
+{
+  "name": "lotterypoolmgr",
+  "version": "1.0.0",
+  "description": "nodejs and react app for managing a lottery pool",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LisaMichael/LotteryPoolMgr.git"
+  },
+  "keywords": [
+    "lottery",
+    "react",
+    "nodejs"
+  ],
+  "author": "lisa michael juan riveria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LisaMichael/LotteryPoolMgr/issues"
+  },
+  "homepage": "https://github.com/LisaMichael/LotteryPoolMgr#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.3"
+  },
+  "devDependencies": {}
+}
