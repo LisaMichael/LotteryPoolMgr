@@ -1,11 +1,22 @@
 {
   "name": "lotterypoolmgr",
   "version": "1.0.0",
-  "description": "nodejs and react app for managing a lottery pool",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "project3 HES",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.3",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "validator": "^12.2.0",
+    "webpack": "^4.42.0"
   },
+  "devDependencies": {},
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
@@ -18,27 +29,12 @@
     "url": "git+https://github.com/LisaMichael/LotteryPoolMgr.git"
   },
   "keywords": [
-    "lottery",
-    "react",
-    "nodejs"
+    "lotto"
   ],
-  "author": "lisa michael juan riveria",
+  "author": "Lisa Michael",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LisaMichael/LotteryPoolMgr/issues"
   },
-  "homepage": "https://github.com/LisaMichael/LotteryPoolMgr#readme",
-  "dependencies": {
-    "axios": "^0.19.2",
-    "bcryptjs": "^2.4.3",
-    "cheerio": "^1.0.0-rc.3",
-    "express": "^4.17.1",
-    "is-empty": "^1.2.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.3",
-    "passport": "^0.4.1",
-    "passport-jwt": "^4.0.0",
-    "validator": "^12.2.0"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/LisaMichael/LotteryPoolMgr#readme"
 }

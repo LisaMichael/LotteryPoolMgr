@@ -4,8 +4,8 @@ React Web application to manage season tickets for a lottery pool
 # Project 3a - Lottery Pool Manager
 # Harvard Extension School
 # Authors: 
-# Juan Rivera Role: Developer
 # Lisa Michael Role: Developer 
+# Contributor: Juan Riveria
 
 Powerball Pool Application 
 
