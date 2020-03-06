@@ -6,6 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js --ignore client",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LisaMichael/LotteryPoolMgr.git"
@@ -22,8 +29,16 @@
   },
   "homepage": "https://github.com/LisaMichael/LotteryPoolMgr#readme",
   "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
-    "mongoose": "^5.9.3"
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.3",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "validator": "^12.2.0"
   },
   "devDependencies": {}
 }

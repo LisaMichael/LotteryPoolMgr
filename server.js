@@ -12,10 +12,10 @@ var cheerio = require("cheerio");
 var axios = require("axios");
 
 // First, tell the console what server.js is doing
-console.log("\n***********************************\n" +
-            "Grabbing every thread name and link\n" +
-            "from the web page i end up deciding to use" +
-            "\n***********************************\n");
+// console.log("\n***********************************\n" +
+//             "Grabbing every thread name and link\n" +
+//             "from reddit's webdev board:" +
+//             "\n***********************************\n");
 
 // Bodyparser middleware
 app.use(
@@ -26,20 +26,21 @@ app.use(
 app.use(bodyParser.json());
 // DB Config
 // const db = require("./config/keys").mongoURI;
+// // Connect to MongoDB
+// console.log('~~~~~~~' + db + '~~~~~~~~~~~~~~')
+// mongoose
+//   .connect(
+//     db,
+//     { useNewUrlParser: true }
+//   )
+//   .then(() => console.log("MongoDB successfully connected"))
+//   .catch(err => console.log(err));
+
+
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/powerball");
+ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/powerball");
 
 
-
-// Connect to MongoDB
-console.log('~~~~~~~' + db + '~~~~~~~~~~~~~~')
-mongoose
-  .connect(
-    db,
-    { useNewUrlParser: true }
-  )
-  .then(() => console.log("MongoDB successfully connected"))
-  .catch(err => console.log(err));
 // Passport middleware
 app.use(passport.initialize());
 // Passport config
@@ -67,7 +68,7 @@ app.listen(port, () => console.log(`Server up and running on port ${port} !`));
 // // Add routes, both API and view
 // // app.use(routes);
 
-// Connect to the Mongo DB
+// // Connect to the Mongo DB
 // mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/powerball");
 
 // // Start the API server
