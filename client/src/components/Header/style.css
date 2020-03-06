@@ -1,7 +1,8 @@
 .header {
   background-image:
-   url("../../lottery.jpg");
+   url("../../Lottery-Balls.jpg");
    background-repeat: no-repeat;
+   background-size: cover;
     height: 400px;
     width: 100%;
     margin-top: 0;
@@ -18,5 +19,7 @@
   .header h2 {
     text-align: center;
     font-size: 25px;
+    color:red;
+    font: outline;
     
 }

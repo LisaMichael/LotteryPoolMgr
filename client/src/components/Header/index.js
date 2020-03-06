@@ -6,7 +6,7 @@ function Header() {
         <div>
             <header className="header">
                 <h1>Lottery Pool</h1>
-                <h2>Can't Win if you don't Play !</h2>
+                <h2> We manage the pool, you enjoy the Game!</h2>
             </header>
         </div>
     );
