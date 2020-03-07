@@ -8,7 +8,7 @@ function Header() {
         <div>
             <header className="header">
                 <h1>Lotto Fun</h1>
-                <h2> We manage the pool, you enjoy the Game!</h2>
+                <h2> We manage the pool. You enjoy the Game!</h2>
             </header>
         </div>
     );
