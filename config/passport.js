@@ -1,3 +1,5 @@
+// passport was recommended by my tutor . I'll reconfigure this with my info rather than juans
+
 const JwtStrategy = require("passport-jwt").Strategy;
 const ExtractJwt = require("passport-jwt").ExtractJwt;
 const mongoose = require("mongoose");
