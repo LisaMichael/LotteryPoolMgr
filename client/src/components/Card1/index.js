@@ -11,9 +11,9 @@ const Card = props => {
             </div>
 
             <div className="card-body text-dark">
-                <h4 className="card-title">CARD TITLE</h4>
-                <p className="card-text text-secondary">lorium ipsum dolor sit amet consecuetur</p>
-                <a href="#" className ="btn btn-outline-success">Go Anywhere</a>
+                <h4 className="card-title">YOU MUST BE A MEMBER TO ACCESS</h4>
+                <p className="card-text text-secondary"></p>
+                <a href="#" className ="btn btn-outline-success">CLICK TO LOGIN</a>
             </div>
             </div>
             );
