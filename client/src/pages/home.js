@@ -1,6 +1,7 @@
 import React from 'react' ;
 // import Navbar from '../components/Navbar';
 import Header from '../components/Header';
+import Card1 from "../components/Card1";
 
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
         
 <div>
   <Header/>
+  <Card1/>
   </div>
     
     )
