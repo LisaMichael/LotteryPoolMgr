@@ -1,3 +1,9 @@
 nav.navbar.navbar-default {
   margin-bottom: 0;
+  
+}
+
+navbar-light {
+  background-color:blue;
+  color: rgb(255, 47, 220)
 }

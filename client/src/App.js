@@ -17,30 +17,36 @@ import Admin from "./pages/Admin";
 
 class App extends Component {
   // Setting this.state.petro values
-  
+
   render() {
 
     // this section of code was obtained from week 21, exercise 4 class example
     return (
       <div>
         <Router>
-        <Navbar/>
-      <div>
-        <Wrapper>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/Admin" component={Admin} />
-          <Route exact path="/home" component={Home} />
+          <Navbar />
+          <div>
+            <Wrapper>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/Admin" component={Admin} />
+              <Route exact path="/home" component={Home} />
 
-          {/* <Switch>
+              {/* <Switch>
 
-           // private route is used for authenticated users
+
+
+           //private route is used for authenticated users
+           Please reference Youtube video : Protected routes and authentication with React Router v4
+            https://tylermcginnis.com/react-router-protected-routes-authentication/
+
                 <PrivateRoute exact path="/Loginbutton" component={Loginbutton} />
                 </Switch> */}
-        </Wrapper>
-       
-      </div>
-    </Router>
-       
+                
+            </Wrapper>
+
+          </div>
+        </Router>
+
 
       </div>
     );
