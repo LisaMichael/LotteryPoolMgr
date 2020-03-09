@@ -15,7 +15,7 @@ const Card1 = props => {
     return (
         <div className="card text-center">
             <div className="overflow">
-                <img src={imglogin} alter="imagelogin" style={{height: '100px'}} />
+                <img src={imglogin} alt="imagelogin" style={{height: '100px'}} />
             </div>
 
             <div className="card-body text-dark">

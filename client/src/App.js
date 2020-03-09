@@ -24,6 +24,7 @@ class App extends Component {
       <div>
         <Router>
           <Navbar />
+          <Header/>
           <div>
             <Wrapper>
               <Route exact path="/" component={Login} />

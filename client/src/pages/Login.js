@@ -9,7 +9,6 @@ function Login() {
     return(
         
 <div>
-  <Header/>
   <Card1/>
   </div>
     
