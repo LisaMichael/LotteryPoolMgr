@@ -5,7 +5,7 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Login from './pages/Login';
-// import Home from './pages/Home';
+import Home from './pages/Home';
 // import Grid from "./components/Grid";
 // import Col from "./components/Col";
 // import Pbcard from './components/Pbcard/Pbcard';
@@ -28,18 +28,19 @@ class App extends Component {
             <Wrapper>
               <Route exact path="/" component={Login} />
               <Route exact path="/Admin" component={Admin} />
+              <Route exact path="/Home" component={Home} />
               {/* <Route exact path="/home" component={Home} /> */}
 
-              {/* <Switch>
+              <Switch>
 
 
 
-           //private route is used for authenticated users
+           {/* //private route is used for authenticated users
            Please reference Youtube video : Protected routes and authentication with React Router v4
-            https://tylermcginnis.com/react-router-protected-routes-authentication/
+            https://tylermcginnis.com/react-router-protected-routes-authentication/ */}
 
-                <PrivateRoute exact path="/Loginbutton" component={Loginbutton} />
-                </Switch> */}
+                {/* <PrivateRoute exact path="/Home" component={Home} /> */}
+                </Switch>
                 
             </Wrapper>
 

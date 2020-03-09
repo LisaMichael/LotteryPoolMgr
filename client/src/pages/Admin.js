@@ -115,7 +115,7 @@ class Admin extends Component {
                         ) : (
                                 <h3>No Results to Display</h3>
                             )} */}
-                            <h3> test display</h3>
+                        <h3> test display</h3>
                     </Col>
                 </Row>
             </Container>
