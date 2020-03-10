@@ -1,9 +1,10 @@
 
 import React from 'react';
-import "../Card1/style.css";
+import "./style.css";
 
 // import the image to be used by the card
 import imglogin from "../../assets/images/pbLogin.jpg";
+
 
 
 // function created to define the card 
@@ -15,7 +16,7 @@ const Card1 = props => {
     return (
         <div className="card text-center">
             <div className="overflow">
-                <img src={imglogin} alt="imagelogin" style={{height: '100px'}} />
+                <img src={props.imgsrc} alt="imagelogin" style={{ height: '175px' }} className="card-img-top" />
             </div>
 
             <div className="card-body text-dark">

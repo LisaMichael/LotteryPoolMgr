@@ -8,7 +8,7 @@ import img4 from "../assets/images/pbTickets.jpg";
 import img5 from "../assets/images/pbLottoFun.jpg";
 
 
-class Home extends Component {
+class Card2 extends Component {
 
   render() {
     return (
@@ -28,7 +28,7 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Card2;
 
 
 

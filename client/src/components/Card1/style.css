@@ -1,0 +1,14 @@
+body {
+    background: radial-gradient(#e5e5e5, #ffffff,#e5e5e5);
+}
+
+.card{
+    width: 20 rem; 
+}
+card:hover{
+    box-shadow: 5px 10px 20px 1pxrggba(0,0,0,0.253)!important;
+}
+
+card-body{
+    padding: 3rem 0 !important;
+}
