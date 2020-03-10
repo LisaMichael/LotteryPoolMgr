@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Hero from "../components/Hero";
-import Navbar from "../components/Navbar"
+// import Navbar from "../components/Navbar"
 // import Row from "../components/Row";
 // import Col from "../components/Col";
 // import Jumbotron from "../components/Jumbotron";
@@ -19,7 +19,8 @@ class Admin extends Component {
         users: [],
         fullname: "",
         location: "",
-        expiration: ""
+        expiration: "",
+        password: ""
     };
 
     componentDidMount() {
@@ -29,7 +30,7 @@ class Admin extends Component {
     loadMembers = () => {
         API.getMember()
             .then(res =>
-                this.setState({ Member: res.data, fullname: "", location: "", expiration: "" })
+                this.setState({ Member: res.data, fullname: "", location: "", expiration: "", password:"" })
             )
             .catch(err => console.log(err));
     };
@@ -53,7 +54,8 @@ class Admin extends Component {
             API.saveMember({
                 fullname: this.state.fullname,
                 location: this.state.location,
-                expiration: this.state.expiration
+                expiration: this.state.expiration,
+                password: this.state.password
             })
                 .then(res => this.loadMembers())
                 .catch(err => console.log(err));
@@ -87,6 +89,12 @@ class Admin extends Component {
                                 name="expiration"
                                 placeholder="Expiration Date"
                             />
+                             <Input
+                                value={this.state.password}
+                                onChange={this.handleInputChange}
+                                name="password"
+                                placeholder="Password"
+                            />
                             <FormBtn
                                 disabled={!(this.state.location && this.state.fullname)}
                                 onClick={this.handleFormSubmit}
@@ -97,7 +105,7 @@ class Admin extends Component {
                     </Col>
                     <Col size="md-6 sm-12">
                         <Hero>
-                            <h1>Members On My List</h1>
+                            <h1>Member List</h1>
                         </Hero>
                         {/* {this.state.user.length ? (
                             <List>

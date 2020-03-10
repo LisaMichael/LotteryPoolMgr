@@ -6,9 +6,8 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Login from './pages/Login';
 import Home from './pages/Home';
-// import Grid from "./components/Grid";
+import Members from './pages/Members';
 // import Col from "./components/Col";
-// import Pbcard from './components/Pbcard/Pbcard';
 // import Row from "./components/Row"; 
 import Wrapper from "./components/Wrapper";
 import Admin from "./pages/Admin";
@@ -32,6 +31,8 @@ class App extends Component {
               <Route exact path="/" component={Login} />
               <Route exact path="/Admin" component={Admin} />
               <Route exact path="/Home" component={Home} />
+              <Route exact path="/Members" component={Members} />
+
               {/* <Route exact path="/home" component={Home} /> */}
 
               <Switch>
