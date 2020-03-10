@@ -3,7 +3,7 @@ import React from 'react';
 import "./style.css";
 
 // import the image to be used by the card
-import imglogin from "../../assets/images/pbLogin.jpg";
+import imgsrc from "../../assets/images/pbLogin.jpg";
 
 
 
@@ -20,7 +20,7 @@ const Card1 = props => {
             </div>
 
             <div className="card-body text-dark">
-                <h4 className="card-title">YOU MUST BE A MEMBER TO ACCESS</h4>
+                <h4 className="card-title">{props.title}</h4>
                 <p className="card-text text-secondary"></p>
                 <a href="LoginForm" className="btn btn-outline-success">CLICK TO LOGIN</a>
             </div>

@@ -18,10 +18,10 @@ class Home extends Component {
        
          <div className='row'>
 
-          <div className="col-md-3"><Card1 imgsrc={img2} alt="imageMembers" /></div>
-          <div className="col-md-3"><Card1 imgsrc={img3} /></div>
-          <div className="col-md-3"><Card1 imgsrc={img4} /></div>
-          <div className="col-md-3"><Card1 imgsrc={img5} /></div>
+          <div className="col-md-3"><Card1 imgsrc={img2} alt="imageMembers" title="View Memberlist" /></div>
+          <div className="col-md-3"><Card1 imgsrc={img3} title="Season Summary" /></div>
+          <div className="col-md-3"><Card1 imgsrc={img4} title="Ticket list" /></div>
+          <div className="col-md-3"><Card1 imgsrc={img5} title="Fun Stuff" /></div>
         </div>
       </div>
     );
