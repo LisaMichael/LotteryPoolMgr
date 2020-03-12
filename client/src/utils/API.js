@@ -1,6 +1,12 @@
 import axios from "axios";
 
-// Export an object containing methods we'll use for accessing the Dog.Ceo API
+
+// this is the json for the MA State lottery website: 
+// POWERBALL API - JSON Search results : 
+// https://www.masslottery.com/data/json/search/lotterygames/10-data.json?_=1583547261840
+
+// https://games.api.lottery.com/api/v2.0/results?game=59bc2b6031947b9daf338d32
+
 
 export default {
   getPbNum: function () {
@@ -29,7 +35,3 @@ export default {
 
 
 
-// POWERBALL API - JSON Search results : 
-// https://www.masslottery.com/data/json/search/lotterygames/10-data.json?_=1583547261840
-
-// https://games.api.lottery.com/api/v2.0/results?game=59bc2b6031947b9daf338d32

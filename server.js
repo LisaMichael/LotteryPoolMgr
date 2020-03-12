@@ -37,7 +37,12 @@ app.use(bodyParser.json());
 
 
 // Connect to the Mongo DB
- mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/powerball");
+//  mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/powerball");
+
+ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://<dbuser>:<dbpassword>@ds017514.mlab.com:17514/heroku_2llrdp6v";
+
+mongoose.connect(MONGODB_URI);
+
 
 
 // Passport middleware

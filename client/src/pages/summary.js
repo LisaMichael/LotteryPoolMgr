@@ -2,7 +2,8 @@ import React from "react";
 import Hero from "../components/Hero";
 // import Navbar from "../components/Navbar"
 
-
+// json output of mass lottery web site: 
+// https://www.masslottery.com/data/json/search/lotterygames/10-data.json?_=1583547261840
 
 function Summary () {
 
