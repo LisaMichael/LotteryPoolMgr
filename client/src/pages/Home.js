@@ -13,11 +13,8 @@ class Home extends Component {
   render() {
     return (
 
-
       <div className="container-fluid d-flex justify-content-center">
-
         <div className='row'>
-
           <div className="col-md-3"><Card1 imgsrc={img2} alt="imageMembers" title="View Memberlist" /></div>
           <div className="col-md-3"><Card1 imgsrc={img3} title="Season Summary" /></div>
           <div className="col-md-3"><Card1 imgsrc={img4} title="Ticket list" /></div>

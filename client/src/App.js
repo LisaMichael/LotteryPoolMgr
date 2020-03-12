@@ -5,10 +5,11 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Login from './pages/Login';
+import LoginForm from './pages/LoginForm';
+import Tickets from './pages/Tickets';
 import Home from './pages/Home';
 import Members from './pages/Members';
-// import Col from "./components/Col";
-// import Row from "./components/Row"; 
+// import Form from "./components/Form"; 
 import Wrapper from "./components/Wrapper";
 import Admin from "./pages/Admin";
 
@@ -32,6 +33,7 @@ class App extends Component {
               <Route exact path="/Admin" component={Admin} />
               <Route exact path="/Home" component={Home} />
               <Route exact path="/Members" component={Members} />
+              <Route exact path="/Tickets" component={Tickets} />
 
               {/* <Route exact path="/home" component={Home} /> */}
 

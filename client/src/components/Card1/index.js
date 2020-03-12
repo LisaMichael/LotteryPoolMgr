@@ -13,7 +13,7 @@ import "./style.css";
 const Card1 = props => {
 
     return (
-        <div className="card text-center">
+        <div className="card text-center shadow">
             <div className="overflow">
                 <img src={props.imgsrc} alt="imagelogin" style={{ height: '175px' }} className="card-image-top" />
             </div>

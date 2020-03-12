@@ -12,6 +12,7 @@ function Summary () {
        <Hero> 
            <h1>Season Summary</h1> 
        </Hero>
+       <Card></Card>
         </div>
     );
 }
