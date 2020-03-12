@@ -5,15 +5,12 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Login from './pages/Login';
-import LoginForm from './pages/LoginForm';
+// import LoginForm from './pages/LoginForm';
 import Tickets from './pages/Tickets';
 import Home from './pages/Home';
 import Members from './pages/Members';
-// import Form from "./components/Form"; 
 import Wrapper from "./components/Wrapper";
 import Admin from "./pages/Admin";
-
-
 
 
 class App extends Component {

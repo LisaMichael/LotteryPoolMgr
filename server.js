@@ -14,7 +14,6 @@ var axios = require("axios");
 // First, tell the console what server.js is doing
 // console.log("\n***********************************\n" +
 //             "Grabbing every thread name and link\n" +
-//             "from reddit's webdev board:" +
 //             "\n***********************************\n");
 
 // Bodyparser middleware

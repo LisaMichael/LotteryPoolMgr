@@ -15,10 +15,10 @@ class Home extends Component {
 
       <div className="container-fluid d-flex justify-content-center">
         <div className='row'>
-          <div className="col-md-3"><Card1 imgsrc={img2} alt="imageMembers" title="View Memberlist" /></div>
-          <div className="col-md-3"><Card1 imgsrc={img3} title="Season Summary" /></div>
-          <div className="col-md-3"><Card1 imgsrc={img4} title="Ticket list" /></div>
-          <div className="col-md-3"><Card1 imgsrc={img5} title="Fun Stuff" /></div>
+          <div className="col-md-3"><Card1 imgsrc={img2} alt="imageMembers" title="View Memberlist" link="/members" /></div>
+          <div className="col-md-3"><Card1 imgsrc={img3} title="Season Summary" link="/summary" /></div>
+          <div className="col-md-3"><Card1 imgsrc={img4} title="Ticket list" link="/tickets" /></div>
+          <div className="col-md-3"><Card1 imgsrc={img5} title="Fun Stuff" link="/lottofun" /></div>
         </div>
       </div>
     );

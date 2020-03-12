@@ -21,7 +21,7 @@ const Card1 = props => {
             <div className="card-body text-dark">
                 <h4 className="card-title">{props.title}</h4>
                 <p className="card-text text-secondary"></p>
-                <a href="LoginForm" className="btn btn-outline-success">CLICK TO LOGIN</a>
+                <a href={props.link} className="btn btn-outline-success">CLICK TO LOGIN</a>
             </div>
         </div>
     );

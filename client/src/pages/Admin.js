@@ -30,7 +30,7 @@ class Admin extends Component {
     loadMembers = () => {
         API.getMember()
             .then(res =>
-                this.setState({ Member: res.data, fullname: "", location: "", expiration: "", password:"" })
+                this.setState({ Member: res.data, fullname: "", location: "", expiration: "", password: "" })
             )
             .catch(err => console.log(err));
     };
@@ -83,17 +83,19 @@ class Admin extends Component {
                                 name="location"
                                 placeholder="Location (required)"
                             />
-                            <Input
+
+                            {/* input field for expiration date  */}
+                            {/* <Input
                                 value={this.state.expiration}
                                 onChange={this.handleInputChange}
                                 name="expiration"
                                 placeholder="Expiration Date"
-                            />
-                             <Input
+                            /> */}
+                            <Input
                                 value={this.state.password}
                                 onChange={this.handleInputChange}
                                 name="password"
-                                placeholder="Password"
+                                placeholder="Set User Password"
                             />
                             <FormBtn
                                 disabled={!(this.state.location && this.state.fullname)}
