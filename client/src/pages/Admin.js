@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import Hero from "../components/Hero";
-// import Navbar from "../components/Navbar"
-// import Row from "../components/Row";
-// import Col from "../components/Col";
-// import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 // import { Input, TextArea, FormBtn } from "../components/Form";
 import { Input, FormBtn } from "../components/Form";
@@ -54,7 +50,7 @@ class Admin extends Component {
             API.saveMember({
                 fullname: this.state.fullname,
                 location: this.state.location,
-                expiration: this.state.expiration,
+                email: this.state.email,
                 password: this.state.password
             })
                 .then(res => this.loadMembers())

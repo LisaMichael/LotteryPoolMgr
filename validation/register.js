@@ -1,3 +1,5 @@
+// Please reference : https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-1-c405048e3669
+
 const Validator = require("validator");
 const isEmpty = require("is-empty");
 module.exports = function validateRegisterInput(data) {

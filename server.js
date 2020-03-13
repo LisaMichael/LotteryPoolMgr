@@ -12,9 +12,10 @@ var cheerio = require("cheerio");
 var axios = require("axios");
 
 // First, tell the console what server.js is doing
-// console.log("\n***********************************\n" +
-//             "Grabbing every thread name and link\n" +
-//             "\n***********************************\n");
+console.log("\n***********************************\n" +
+            "Grabbing every thread name and link\n" +
+            "from reddit's webdev board:" +
+            "\n***********************************\n");
 
 // Bodyparser middleware
 app.use(
@@ -34,21 +35,6 @@ mongoose
   )
   .then(() => console.log("MongoDB successfully connected"))
   .catch(err => console.log(err));
-
-
-// Connect to the Mongo DB
-//  mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/powerball");
-
-//  var MONGODB_URI = process.env.MONGODB_URI ||
- 
-//  "mongodb://<dbuser>:<dbpassword>@ds017514.mlab.com:17514/heroku_2llrdp6v";
-
-
-
-// mongoose.connect(MONGODB_URI);
-
-
-
 // Passport middleware
 app.use(passport.initialize());
 // Passport config
