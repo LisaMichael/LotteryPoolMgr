@@ -24,28 +24,28 @@ app.use(
 );
 app.use(bodyParser.json());
 // DB Config
-// const db = require("./config/keys").mongoURI;
-// // Connect to MongoDB
-// console.log('~~~~~~~' + db + '~~~~~~~~~~~~~~')
-// mongoose
-//   .connect(
-//     db,
-//     { useNewUrlParser: true }
-//   )
-//   .then(() => console.log("MongoDB successfully connected"))
-//   .catch(err => console.log(err));
+const db = require("./config/keys").mongoURI;
+// Connect to MongoDB
+console.log('~~~~~~~' + db + '~~~~~~~~~~~~~~')
+mongoose
+  .connect(
+    db,
+    { useNewUrlParser: true }
+  )
+  .then(() => console.log("MongoDB successfully connected"))
+  .catch(err => console.log(err));
 
 
 // Connect to the Mongo DB
 //  mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/powerball");
 
- var MONGODB_URI = process.env.MONGODB_URI ||
+//  var MONGODB_URI = process.env.MONGODB_URI ||
  
 //  "mongodb://<dbuser>:<dbpassword>@ds017514.mlab.com:17514/heroku_2llrdp6v";
 
- "mongodb://lisamichael:joe4hire@cluster0-mqdgn.mongodb.net/test?retryWrites=true&w=majority"
 
-mongoose.connect(MONGODB_URI);
+
+// mongoose.connect(MONGODB_URI);
 
 
 
