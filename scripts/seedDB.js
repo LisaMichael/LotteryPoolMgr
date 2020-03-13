@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-// This file empties the Books collection and inserts the books below
+// This file empties the user collection and inserts the user below
 
 mongoose.connect(
   process.env.MONGODB_URI ||
@@ -14,6 +14,13 @@ const userSeed = [
     password: "password",
     location: "Quincy",
     expiration: "2020-03-04"
+    
+  },
+  {
+    fullname: ["Peter Spiller"],
+    password: "password",
+    location: "Boston",
+    expiration: "2022-02-02"
     
   }
   

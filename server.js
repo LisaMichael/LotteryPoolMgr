@@ -39,7 +39,11 @@ app.use(bodyParser.json());
 // Connect to the Mongo DB
 //  mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/powerball");
 
- var MONGODB_URI = process.env.MONGODB_URI || "mongodb://<dbuser>:<dbpassword>@ds017514.mlab.com:17514/heroku_2llrdp6v";
+ var MONGODB_URI = process.env.MONGODB_URI ||
+ 
+//  "mongodb://<dbuser>:<dbpassword>@ds017514.mlab.com:17514/heroku_2llrdp6v";
+
+ "mongodb://lisamichael:joe4hire@cluster0-mqdgn.mongodb.net/test?retryWrites=true&w=majority"
 
 mongoose.connect(MONGODB_URI);
 
