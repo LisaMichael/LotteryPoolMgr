@@ -13,9 +13,8 @@ class Admin extends Component {
     // setting state for users 
     state = {
         users: [],
-        fullname: "",
-        location: "",
-        expiration: "",
+        name: "",
+        email: "",
         password: ""
     };
 
@@ -24,9 +23,9 @@ class Admin extends Component {
     }
 
     loadMembers = () => {
-        API.getMember()
+        API.getUser()
             .then(res =>
-                this.setState({ Member: res.data, fullname: "", location: "", expiration: "", password: "" })
+                this.setState({ User: res.data, name: "", email: "", password: "" })
             )
             .catch(err => console.log(err));
     };
@@ -46,10 +45,9 @@ class Admin extends Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        if (this.state.fullname && this.state.location) {
+        if (this.state.name && this.state.email) {
             API.saveMember({
-                fullname: this.state.fullname,
-                location: this.state.location,
+                name: this.state.name,
                 email: this.state.email,
                 password: this.state.password
             })
@@ -68,15 +66,15 @@ class Admin extends Component {
                         </Hero>
                         <form>
                             <Input
-                                value={this.state.fullname}
+                                value={this.state.name}
                                 onChange={this.handleInputChange}
-                                name="fullname"
+                                name="name"
                                 placeholder="FullName (required)"
                             />
                             <Input
-                                value={this.state.location}
+                                value={this.state.email}
                                 onChange={this.handleInputChange}
-                                name="location"
+                                name="email"
                                 placeholder="Location (required)"
                             />
 
@@ -94,7 +92,7 @@ class Admin extends Component {
                                 placeholder="Set User Password"
                             />
                             <FormBtn
-                                disabled={!(this.state.location && this.state.fullname)}
+                                disabled={!(this.state.email && this.state.name)}
                                 onClick={this.handleFormSubmit}
                             >
                                 Add Member
@@ -111,7 +109,7 @@ class Admin extends Component {
                                     <ListItem key={user._id}>
                                         <Link to={"/member/" + user._id}>
                                             <strong>
-                                                {user.fullname} by {user.location}
+                                                {user.name} by {user.email}
                                             </strong>
                                         </Link>
                                         <DeleteBtn onClick={() => this.deleteMember(user._id)} />
@@ -121,7 +119,7 @@ class Admin extends Component {
                         ) : (
                                 <h3>No Results to Display</h3>
                             )} */}
-                        <h3> test display</h3>
+                        <h3> User display</h3>
                     </Col>
                 </Row>
             </Container>

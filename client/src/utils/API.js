@@ -17,19 +17,19 @@ export default {
   // User-member CRUD 
 
   getMember: function () {
-    return axios.get("/api/member");
+    return axios.get("/api/user");
   },
   // Gets the member with the given id
   getMember: function (id) {
-    return axios.get("/api/member/" + id);
+    return axios.get("/api/user/" + id);
   },
   // Deletes the member with the given id
   deleteMember: function (id) {
-    return axios.delete("/api/member/" + id);
+    return axios.delete("/api/user/" + id);
   },
   // Saves a member to the database
   saveMember: function (userData) {
-    return axios.post("/api/member", userData);
+    return axios.post("/api/user", userData);
   }
 };
 

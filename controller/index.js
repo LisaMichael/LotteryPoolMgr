@@ -3,5 +3,6 @@ const userRoutes = require("./members");
 
 // Book routes
 router.use("/members", userRoutes);
+router.use("/user", userRoutes);
 
 module.exports = router;

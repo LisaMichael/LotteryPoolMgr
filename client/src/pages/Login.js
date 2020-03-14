@@ -11,7 +11,7 @@ function Login() {
     return(
         
 <div>
-  <Card1 imgsrc={imgLogin} alt="imageLogin" title="Enter Credentials" link="/loginform" />
+  <Card1 imgsrc={imgLogin} alt="imageLogin" title="Enter Credentials" link="/LoginForm" />
   </div>
     
     )
