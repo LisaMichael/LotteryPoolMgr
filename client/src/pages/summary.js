@@ -13,7 +13,7 @@ function Summary () {
        <Hero> 
            <h1>Season Summary</h1> 
        </Hero>
-       <Card></Card>
+       {/* table for season summary needs to go here  */}
         </div>
     );
 }
