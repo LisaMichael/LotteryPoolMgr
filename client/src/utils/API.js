@@ -1,4 +1,5 @@
 import axios from "axios";
+import path from "path";
 
 
 // this is the json for the MA State lottery website: 
@@ -15,9 +16,11 @@ export default {
 
 
   //attempting to get heroku to work: 
-
-  // 
-
+  getMember: function () {
+  axios.get("/", function(req, res) {
+    res.json(path.join(__dirname, "../../public/index.html"));
+  });
+},
   // User-member CRUD 
 
   getMember: function () {
