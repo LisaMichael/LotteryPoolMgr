@@ -1,5 +1,4 @@
 import axios from "axios";
-import path from "path";
 
 
 // this is the json for the MA State lottery website: 
@@ -15,28 +14,22 @@ export default {
   },
 
 
-  //attempting to get heroku to work: 
-  getMember: function () {
-  axios.get("/", function(req, res) {
-    res.json(path.join(__dirname, "../../public/index.html"));
-  });
-},
   // User-member CRUD 
 
   getMember: function () {
-    return axios.get("/api/user");
+    return axios.get("/api/member");
   },
   // Gets the member with the given id
   getMember: function (id) {
-    return axios.get("/api/user/" + id);
+    return axios.get("/api/member/" + id);
   },
   // Deletes the member with the given id
   deleteMember: function (id) {
-    return axios.delete("/api/user/" + id);
+    return axios.delete("/api/member/" + id);
   },
   // Saves a member to the database
   saveMember: function (userData) {
-    return axios.post("/api/user", userData);
+    return axios.post("/api/member", userData);
   }
 };
 

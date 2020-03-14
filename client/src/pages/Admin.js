@@ -23,7 +23,7 @@ class Admin extends Component {
     }
 
     loadMembers = () => {
-        API.getUser()
+        API.getMember()
             .then(res =>
                 this.setState({ User: res.data, name: "", email: "", password: "" })
             )
