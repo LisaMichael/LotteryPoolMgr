@@ -14,6 +14,10 @@ export default {
   },
 
 
+  //attempting to get heroku to work: 
+
+  // 
+
   // User-member CRUD 
 
   getMember: function () {

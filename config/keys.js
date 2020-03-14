@@ -3,7 +3,7 @@
 module.exports = {
     
 
-    mongoURI: "mongodb+srv://lisamichael:joe4hire@cluster0-mqdgn.mongodb.net/test?retryWrites=true&w=majority",
+    mongoURI: "mongodb+srv://lisamichael:joe4hire@cluster0-mqdgn.mongodb.net/test?retryWrites=true&w=majority" || process.env.MONGODB_URI,
     
     secretOrKey: "secret"
 };
