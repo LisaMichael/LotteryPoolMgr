@@ -5,6 +5,11 @@ import Hero from "../components/Hero";
 // json output of mass lottery web site: 
 // https://www.masslottery.com/data/json/search/lotterygames/10-data.json?_=1583547261840
 
+
+// table should be similar to facebook page: 
+// https://www.facebook.com/photo.php?fbid=10162814831040524&set=gm.3303976973010352&type=3&theater&ifg=1
+
+
 function Summary () {
 
     return (
